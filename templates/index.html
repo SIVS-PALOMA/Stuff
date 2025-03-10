@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    
+<header class="header">
+    <h1 class="logo">Zoológico Eniac</h1>
+    <nav class="menu">
+        <a href="/">Home</a>
+        <a href="/localizacao">Localização</a>
+        <a href="/sobre">Sobre Nós</a>
+        <a href="/contato">Contato</a>
+    </nav>
+</header>
+
+    <h1 class="titulo">Seja Bem Vindo ao <br> Zoológico Eniac</h1>
+
+    <table>
+        <tbody class="tabelaInicio" style="width: 100%">
+            <tr>
+                <th style="width: 25%">
+                    <h3>Sobre Nós</h3>
+                </th>
+                <th style="width: 25%">
+                    <h3>Localização</h3>
+                </th>
+                <th style="width: 25%">
+                    <h3>Contatos e Redes</h3>
+                </th>
+                <th style="width: 25%">
+                    <h3>Dashboard</h3>
+                </th>
+            </tr>
+            <tr class="menuImgIni">
+                <td>
+                    <a href="/sobre">
+                        <img class="bichos" src="{{ url_for('static', filename='imagens/quem.jpg') }}" alt="mico leao" width="100%"></a>
+                </td>                
+                <td>
+                    <a href="/localizacao">
+                        <img class="bichos" src="{{ url_for('static', filename='imagens/mapa-final-2021.jpg') }}" alt="mapa" width="100%"></a>
+                </td>
+                <td>
+                    <a href="/contato">
+                        <img class="bichos" src="{{ url_for('static', filename='imagens/contato.jpg') }}" alt="cachorro com telefone na boca" width="100%"></a>
+                </td>
+                <td>
+                    <a href="/dashboard">
+                        <img class="bichos" src="{{ url_for('static', filename='imagens/redes.jpg') }}" alt="gato segurando celular" width="100%"></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<footer class="footer">
+    CNPJ: 53.110.609/0001-80
+</footer>
+</html>

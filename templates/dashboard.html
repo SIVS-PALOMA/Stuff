@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="header" >
+
+        <h1 class="logoRedes">Dashboard</h1>
+    
+    <nav class="menuRedes">
+            <a href="/">Home</a></tr>
+            <a href="/localizacao">Localização</a></tr>
+            <a href="/sobre">Sobre Nós</a></tr>
+            <a href="/contato">Contato</a></tr>
+    </nav>
+</header>
+    <table width="100%">
+        <tr>
+            <td width="33%" align="center">
+                <a href="/aves">
+                    <div class="tituloBichos"><b>Aves</b></div> <br>
+                    <img class="bichos" src="{{ url_for('static', filename='imagens/paraguaios.jpg') }}" alt="Papagaio">
+                </a>
+            </td>
+            <td width="33%" align="center">
+                <a href="/repteis">
+                    <div class="tituloBichos"><b>Répteis</b></div> <br>
+                    <img class="bichos" src="{{ url_for('static', filename='imagens/cobra.jpg') }}" alt="Cobra">
+                </a>
+            </td>
+            <td width="33%" align="center">
+                <a href="/mamiferos">
+                    <div class="tituloBichos"><b>Mamíferos</b></div> <br>
+                    <img class="bichos" src="{{ url_for('static', filename='imagens/onça.jpg') }}" alt="Onça">
+                </a>
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- Gráfico de Barras -->
+    <div class="grafico1">
+        {{ graph_bar_html | safe }}
+    </div>
+    
+    <!-- Gráfico de Pizza -->
+    <div class="grafico2">
+        {{ graph_pie_html | safe }}
+    </div>
+    
+
+    
+</body>
+</html>

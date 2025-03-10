@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Répteis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">Zoológico Eniac</h1>
+        <nav class="menu">
+            <a href="/">Home</a>
+            <a href="/localizacao">Localização</a>
+            <a href="/sobre">Sobre Nós</a>
+            <a href="/contato">Contato</a>
+        </nav>
+    </header>
+    <h1 class="nomes">Conheça nosso repteis</h1>
+
+    <table width="100%">
+        <tr>
+            <td width="33%" align="center">
+                    <div class="nomes"><b>Cobra</b></div> <br>
+                    <img class="bichos" src="{{ url_for('static', filename='imagens/cobraPag.jpg') }}" alt="Papagaio">
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <footer class="footer">
+
+        CNPJ: 53.110.609/0001-80
+    </footer>
+
+    
+</body>
+</html>

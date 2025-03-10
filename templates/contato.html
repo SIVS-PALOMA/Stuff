@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <h1 class="logoRedes">Contato e Redes</h1>
+        <nav class="menuRedes">
+            <a href="/">Home</a>
+            <a href="/localizacao">Localização</a>
+            <a href="/sobre">Sobre Nós</a>
+            <a href="/contato">Contato</a>
+        </nav>
+    </header>
+
+    <table>
+        <tbody class="redes" style="width: 100%;">
+            <tr>
+                <th style="width: 33%;">
+                    <a href="https://https://www.facebook.com/zoologico.guarulhos/?locale=pt_BR" target="_blank">
+                        <img src="{{ url_for('static', filename='imagens/face.png') }}" alt="Facebook" width="100%">
+                    </a>
+                </th>
+                <th style="width: 33%;">
+                    <a href="https://https://www.instagram.com/zooguarulhos/" target="_blank">
+                        <img src="{{ url_for('static', filename='imagens/insta.png') }}" alt="Instagram" width="100%">
+                    </a>
+                </th>
+                <th style="width: 33%;">
+                    <a href="https://www.youtube.com/watch?v=_LQD5s4h_ZY" target="_blank">
+                        <img src="{{ url_for('static', filename='imagens/yt.png') }}" alt="YouTube" width="100%">
+                    </a>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer class="footer">
+        CNPJ: 53.110.609/0001-80
+    </footer>
+</body>
+</html>
